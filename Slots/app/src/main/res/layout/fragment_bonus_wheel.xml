@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_vertical"
+    android:layout_height="match_parent">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/firstAnim"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/fish" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/secondAnim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/fish2" />
+
+    <ImageView
+        android:id="@+id/main_wheel"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_margin="30dp"
+        android:src="@drawable/img_spinning_wheel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/img_spinning_wheel_arrow"
+        app:layout_constraintBottom_toTopOf="@+id/main_wheel"
+        app:layout_constraintEnd_toEndOf="@+id/main_wheel"
+        app:layout_constraintStart_toStartOf="@+id/main_wheel"
+        app:layout_constraintTop_toTopOf="@+id/main_wheel" />
+
+    <com.bossbon.bossnza.game.library.CustomButton
+        android:id="@+id/start_wheel"
+        style="@style/MenuButtons"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/bg_button_classic"
+        android:paddingBottom="5dp"
+        android:text="@string/spin"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="360dp"
+        android:layout_height="120dp"
+        android:src="@drawable/img_logotype"
+        app:layout_constraintBottom_toTopOf="@+id/main_wheel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

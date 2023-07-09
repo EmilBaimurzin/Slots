@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">185-Boss Bonanza-Emil</string>
+    <string name="back_to_menu">Main Menu</string>
+    <string name="balance">Balance</string>
+    <string name="exit">Main Menu</string>
+    <string name="main_rule">Boss Bonanza! In this game, we are spinning drum! More same slots means higher winnings!</string>
+    <string name="exit_game">Exit Game</string>
+    <string name="spin">Spin!</string>
+    <string name="rule_wheel">Bonus Wheel! Your reward will multiply by dropped amount. But if amount equals to 0, your reward will disappear</string>
+    <string name="start">Start Game</string>
+    <string name="settings">Settings</string>
+    <string name="learn_more">Rules</string>
+    <string name="reset_balance">Reset Balance</string>
+    <string name="rule_bonus">After collecting your reward, you have a chance to play a bonus game</string>
+    <string name="bonus">Bonus</string>
+    <string name="last_win">Last Win</string>
+    <string name="rule_mini_game">Lottery. Find 3 same multipliers! You have total of 5 attempts, if you found them, your reward multiplies by amount of 3 same multipliers</string>
+    <string name="multipliers">Find 3 same multipliers! You have total of 5 attempts</string>
+    <string name="play">Play</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="105dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/bg_custom"
+    android:layout_height="105dp">
+
+    <ImageView
+        android:id="@+id/imgLottery"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

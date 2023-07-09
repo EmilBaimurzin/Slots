@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="330dp"
+        android:padding="30dp"
+        android:background="@drawable/bg_custom"
+        android:layout_height="200dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/BasicText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You have a chance to spin a wheel to multiply your reward!"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <com.bossbon.bossnza.game.library.CustomButton
+            android:id="@+id/closeButton"
+            android:layout_width="120dp"
+            android:text="Close"
+            style="@style/BasicText"
+            android:paddingBottom="5dp"
+            android:textSize="20sp"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_classic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.bossbon.bossnza.game.library.CustomButton
+            android:id="@+id/spinButton"
+            style="@style/BasicText"
+            android:layout_width="120dp"
+            android:paddingBottom="5dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_button_classic"
+            android:text="@string/spin"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/firstAnim"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/fish" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/secondAnim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/fish2" />
+
+
+    <LinearLayout
+        android:id="@+id/slot_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_custom"
+        android:gravity="center"
+        android:paddingVertical="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLayout">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/slot1"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:listitem="@layout/item_slot" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="20dp"
+            android:background="#99FFD94E" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/slot2"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:listitem="@layout/item_slot" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="20dp"
+            android:background="#99FFD94E" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/slot3"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:listitem="@layout/item_slot" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/winFixedText"
+                style="@style/BasicText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="6dp"
+                android:layout_weight="1"
+                android:paddingHorizontal="6dp"
+                android:text="@string/last_win" />
+
+            <TextView
+                android:id="@+id/balanceFixedText"
+                style="@style/BasicText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="6dp"
+                android:layout_weight="1"
+                android:paddingHorizontal="6dp"
+                android:text="@string/balance" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_custom"
+            android:paddingVertical="6dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="6dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="6dp">
+
+                <TextView
+                    android:id="@+id/winTextView"
+                    style="@style/BasicText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    tools:text="0000000000" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/coinAnimFirst"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleX="1.2"
+                    android:scaleY="1.2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/coin" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="2dp"
+                android:background="#99FFD94E" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="6dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="6dp">
+
+                <TextView
+                    android:id="@+id/balanceTextView"
+                    style="@style/BasicText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    tools:text="0000000000" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/coinAnimSecond"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleX="1.2"
+                    android:scaleY="1.2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/coin" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/betting_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/slot_layout"
+        app:layout_constraintStart_toStartOf="@+id/slot_layout"
+        app:layout_constraintTop_toBottomOf="@+id/slot_layout">
+
+        <ImageView
+            android:id="@+id/lessButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_custom"
+            android:padding="5dp"
+            android:src="@drawable/ic_less" />
+
+        <EditText
+            android:id="@+id/betEditText"
+            style="@style/BasicText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_custom"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingHorizontal="12dp"
+            android:textSize="22sp"
+            tools:text="23333" />
+
+        <ImageView
+            android:id="@+id/moreButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_custom"
+            android:padding="5dp"
+            android:src="@drawable/ic_more" />
+
+    </LinearLayout>
+
+    <com.bossbon.bossnza.game.library.CustomButton
+        android:id="@+id/spinButton"
+        style="@style/MenuButtons"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/bg_button_classic"
+        android:paddingBottom="5dp"
+        android:text="@string/spin"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/betting_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
