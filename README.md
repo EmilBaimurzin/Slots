@@ -1,3 +1,3 @@
 # Slots
 
-![Preview]([http://url/to/img.png](https://github.com/EmilBaimurzin/Slots/blob/main/Preview.png)https://github.com/EmilBaimurzin/Slots/blob/main/Preview.png)
+![Preview](https://github.com/EmilBaimurzin/Slots/blob/main/Preview.png)
